@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17 Năm Nghiên Cứu Khoa Học | Portfolio Công Trình Nghiên Cứu</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        academic: {
+                            gold: '#d97706',
+                            slate: '#0f172a',
+                            emerald: '#059669',
+                            indigo: '#4f46e5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .dark-glass {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased custom-scrollbar selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 w-full glass-card border-b border-slate-200/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-slate-900 to-brand-700 flex items-center justify-center text-white shadow-md shadow-brand-500/20 font-bold text-xl">
+                    <i class="fa-solid me-0.5 fa-microscope"></i>
+                </div>
+                <div>
+                    <span class="block font-extrabold text-slate-900 tracking-tight text-lg sm:text-xl">17-YEAR RESEARCH PORTFOLIO</span>
+                    <span class="text-xs text-brand-600 font-semibold tracking-wider uppercase">18 Công Trình Nghiên Cứu Khoa Học</span>
+                </div>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#overview" class="text-slate-600 hover:text-brand-600 transition-colors">Tổng Quan</a>
+                <a href="#publications" class="text-slate-600 hover:text-brand-600 transition-colors">Công Trình Nghiên Cứu</a>
+                <a href="#timeline" class="text-slate-600 hover:text-brand-600 transition-colors">Hành Trình 17 Năm</a>
+                <a href="#impact" class="text-slate-600 hover:text-brand-600 transition-colors">Thống Kê Tác Động</a>
+                <a href="tel:0919226505" class="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-brand-700 text-white font-semibold transition-all shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-emerald-400"></i> 0919 226 505
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#overview" class="block py-2 text-slate-600 font-medium hover:text-brand-600">Tổng Quan</a>
+            <a href="#publications" class="block py-2 text-slate-600 font-medium hover:text-brand-600">Công Trình Nghiên Cứu</a>
+            <a href="#timeline" class="block py-2 text-slate-600 font-medium hover:text-brand-600">Hành Trình 17 Năm</a>
+            <a href="#impact" class="block py-2 text-slate-600 font-medium hover:text-brand-600">Thống Kê Tác Động</a>
+            <a href="#contact" class="block py-2.5 text-center rounded-xl bg-slate-900 text-white font-semibold">Liên Hệ Hợp Tác</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="overview" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white">
+        <!-- Background Grid Pattern -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-40"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-300 text-xs sm:text-sm font-medium">
+                        <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+                        Hành Trình Tri Thức 17 Năm (2008 - 2025+)
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                        Cống Hiến Khoa Học <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-brand-300 to-emerald-400">
+                            Vì Bền Vững & Công Nghệ
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light">
+                        Tổng hợp 18 công trình nghiên cứu chuyên sâu tập trung vào <strong>Chuyển đổi số, Trí tuệ nhân tạo (AI), Fintech, Mô hình kinh doanh bền vững</strong> và ứng dụng thực tiễn cho nền kinh tế Việt Nam.
+                    </p>
+
+                    <!-- Key Action Buttons -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#publications" class="px-6 py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold transition-all shadow-lg shadow-brand-500/30 flex items-center gap-2">
+                            <i class="fa-solid fa-book-open"></i>
+                            Khám Phá 18 Nghiên Cứu
+                        </a>
+                        <button onclick="downloadCvSummary()" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-file-pdf text-rose-400"></i>
+                            Xuất Hồ Sơ Nghiên Cứu (PDF)
+                        </button>
+                    </div>
+
+                    <!-- Quick Academic Tag Pills -->
+                    <div class="pt-4 flex flex-wrap justify-center lg:justify-start gap-2 text-xs text-slate-400">
+                        <span class="bg-slate-800/80 px-3 py-1 rounded-md border border-slate-700/60"><i class="fa-solid fa-brain text-purple-400 mr-1.5"></i> AI & Consumer Behavior</span>
+                        <span class="bg-slate-800/80 px-3 py-1 rounded-md border border-slate-700/60"><i class="fa-solid fa-coins text-amber-400 mr-1.5"></i> Crypto & Fintech</span>
+                        <span class="bg-slate-800/80 px-3 py-1 rounded-md border border-slate-700/60"><i class="fa-solid fa-chart-line text-emerald-400 mr-1.5"></i> Digital Transformation</span>
+                        <span class="bg-slate-800/80 px-3 py-1 rounded-md border border-slate-700/60"><i class="fa-solid fa-building text-blue-400 mr-1.5"></i> SMEs & Real Estate</span>
+                    </div>
+                </div>
+
+                <!-- Stats Highlights Box -->
+                <div class="lg:col-span-5">
+                    <div class="dark-glass rounded-3xl p-6 sm:p-8 shadow-2xl relative">
+                        <div class="absolute -top-3 -right-3 w-12 h-12 bg-amber-500/20 rounded-full blur-xl"></div>
+                        <h3 class="text-slate-300 text-xs font-bold uppercase tracking-wider mb-6 flex items-center justify-between border-b border-slate-700/60 pb-3">
+                            <span>Thống Kê Tóm Tắt Profile</span>
+                            <i class="fa-solid fa-award text-amber-400 text-lg"></i>
+                        </h3>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="p-4 rounded-2xl bg-slate-800/50 border border-slate-700/50 text-center sm:text-left">
+                                <div class="text-3xl font-extrabold text-brand-400 mb-1">17+</div>
+                                <div class="text-xs text-slate-400 font-medium">Năm Nghiên Cứu Lĩnh Vực Kinh Tế & Công Nghệ</div>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-slate-800/50 border border-slate-700/50 text-center sm:text-left">
+                                <div class="text-3xl font-extrabold text-emerald-400 mb-1">18</div>
+                                <div class="text-xs text-slate-400 font-medium">Đề Tài & Công Trình Khoa Học Đã Công Bố</div>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-slate-800/50 border border-slate-700/50 text-center sm:text-left">
+                                <div class="text-3xl font-extrabold text-amber-400 mb-1">5+</div>
+                                <div class="text-xs text-slate-400 font-medium">Lĩnh Vực Trọng Điểm Đã Nghiên Cứu</div>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-slate-800/50 border border-slate-700/50 text-center sm:text-left">
+                                <div class="text-3xl font-extrabold text-purple-400 mb-1">TP.HCM</div>
+                                <div class="text-xs text-slate-400 font-medium">Địa Bàn Nghiên Cứu Thực Nghiệm Chính</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-5 border-t border-slate-700/60 flex items-center justify-between text-xs text-slate-400">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-brand-400"></i> Đơn vị: Đại học Kinh tế TP.HCM (UEH)</span>
+                            <a href="mailto:namnp@ueh.edu.vn" class="font-semibold text-brand-300 hover:underline">namnp@ueh.edu.vn</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Publications Section -->
+    <section id="publications" class="py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Title & Filter Tools -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div>
+                <span class="text-brand-600 font-bold text-xs uppercase tracking-widest block mb-1">Danh Mục Đề Tài</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    18 Công Trình Nghiên Cứu Khoa Học
+                </h2>
+            </div>
+
+            <!-- Layout toggle & count -->
+            <div class="flex items-center gap-3">
+                <span id="result-count-badge" class="px-3 py-1 rounded-full bg-brand-50 text-brand-700 font-semibold text-xs border border-brand-200">
+                    Hiển thị 18 công trình
+                </span>
+                <div class="bg-white border border-slate-200 rounded-xl p-1 flex items-center space-x-1 shadow-sm">
+                    <button id="view-grid-btn" onclick="setSwitchView('grid')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 text-white transition-all">
+                        <i class="fa-solid fa-grip mr-1"></i> Lưới
+                    </button>
+                    <button id="view-list-btn" onclick="setSwitchView('list')" class="px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 transition-all">
+                        <i class="fa-solid fa-list mr-1"></i> Danh Sách
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Bar & Category Filter Pills -->
+        <div class="space-y-4 mb-10">
+            <!-- Search Input -->
+            <div class="relative max-w-2xl">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                <input type="text" id="search-input" onkeyup="filterPapers()" placeholder="Tìm kiếm tên bài báo, từ khóa (AI, TikTok, Sapo, Fintech, UEH, Ngân hàng...)..." 
+                       class="w-full pl-11 pr-4 py-3.5 bg-white border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 shadow-sm transition-all">
+                <button onclick="clearSearch()" id="clear-search-btn" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-xs text-slate-400 hover:text-slate-600 px-2 py-1">
+                    <i class="fa-solid fa-xmark"></i> Xóa
+                </button>
+            </div>
+
+            <!-- Categories Filter Pills -->
+            <div class="flex flex-wrap items-center gap-2" id="category-filters">
+                <button onclick="filterCategory('ALL')" class="category-btn active px-4 py-2 rounded-xl text-xs font-bold transition-all bg-brand-600 text-white shadow-sm shadow-brand-500/20">
+                    Tất Cả (18)
+                </button>
+                <button onclick="filterCategory('AI_DIGITAL')" class="category-btn px-4 py-2 rounded-xl text-xs font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all">
+                    <i class="fa-solid fa-robot text-purple-500 mr-1"></i> AI & TikTok
+                </button>
+                <button onclick="filterCategory('FINTECH_FINANCE')" class="category-btn px-4 py-2 rounded-xl text-xs font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all">
+                    <i class="fa-solid fa-coins text-amber-500 mr-1"></i> Tài Sản Số & Fintech
+                </button>
+                <button onclick="filterCategory('DIGITAL_TRANS')" class="category-btn px-4 py-2 rounded-xl text-xs font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all">
+                    <i class="fa-solid fa-chart-line text-emerald-500 mr-1"></i> Chuyển Đổi Số
+                </button>
+                <button onclick="filterCategory('RETAIL_ECOM')" class="category-btn px-4 py-2 rounded-xl text-xs font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all">
+                    <i class="fa-solid fa-cart-shopping text-blue-500 mr-1"></i> Bán Lẻ & TMĐT
+                </button>
+                <button onclick="filterCategory('SME_MANAGEMENT')" class="category-btn px-4 py-2 rounded-xl text-xs font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all">
+                    <i class="fa-solid fa-building text-indigo-500 mr-1"></i> SMEs & Bất Động Sản
+                </button>
+                <button onclick="filterCategory('HEALTHCARE_EDU')" class="category-btn px-4 py-2 rounded-xl text-xs font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all">
+                    <i class="fa-solid fa-heart-pulse text-rose-500 mr-1"></i> Y Tế & Giáo Dục
+                </button>
+            </div>
+        </div>
+
+        <!-- Papers Container (Grid / List) -->
+        <div id="papers-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dynamic JS injects papers here -->
+        </div>
+
+        <!-- No Results Fallback -->
+        <div id="no-results" class="hidden text-center py-16 bg-white rounded-3xl border border-dashed border-slate-300">
+            <i class="fa-solid fa-folder-open text-4xl text-slate-300 mb-3"></i>
+            <h3 class="text-base font-bold text-slate-700">Không tìm thấy công trình phù hợp</h3>
+            <p class="text-xs text-slate-500 mt-1">Thử đổi từ khóa hoặc chọn lại bộ lọc lĩnh vực nghiên cứu</p>
+            <button onclick="resetFilters()" class="mt-4 px-4 py-2 bg-brand-50 text-brand-600 text-xs font-bold rounded-xl hover:bg-brand-100">
+                Đặt lại bộ lọc
+            </button>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="py-16 lg:py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-400 font-bold text-xs uppercase tracking-widest block mb-2">Tiến Trình Phát Triển</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                    Hành Trình Tri Thức 17 Năm Qua
+                </h2>
+                <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                    Sự tiến hóa trong các đề tài nghiên cứu từ Quản trị Dịch vụ truyền thống đến Công nghệ 4.0, Chuyển đổi số toàn diện và Trí tuệ Nhân tạo (AI).
+                </p>
+            </div>
+
+            <!-- Timeline visual representation -->
+            <div class="relative border-l-2 border-slate-700 ml-4 md:ml-32 space-y-12">
+                
+                <!-- Timeline Item 1 -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute -left-3 top-1.5 w-6 h-6 rounded-full bg-brand-500 border-4 border-slate-900 flex items-center justify-center"></div>
+                    <div class="md:absolute md:-left-32 md:top-1 text-xs font-bold text-brand-400 mb-1 md:mb-0 md:w-24 md:text-right">
+                        Giai Đoạn Gần Đây (2023 - 2025+)
+                    </div>
+                    <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/60 shadow-lg">
+                        <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30 mb-2">Đột phá AI & Tài sản số</span>
+                        <h3 class="text-lg font-bold text-white mb-2">Quảng Cáo TikTok AI & Quản Trị Rủi Ro Tài Sản Số</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Nghiên cứu tiên phong tại Việt Nam về hành vi người tiêu dùng đối với mỹ phẩm thuần chay quảng cáo bằng AI trên TikTok, cùng khung giải pháp đa cấp độ cho đầu tư tài sản kỹ thuật số (Crypto Assets).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute -left-3 top-1.5 w-6 h-6 rounded-full bg-emerald-500 border-4 border-slate-900"></div>
+                    <div class="md:absolute md:-left-32 md:top-1 text-xs font-bold text-emerald-400 mb-1 md:mb-0 md:w-24 md:text-right">
+                        Giai Đoạn 2021 - 2023
+                    </div>
+                    <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/60 shadow-lg">
+                        <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 mb-2">Chuyển đổi số Ngành Bán Lẻ, BĐS & Du Lịch</span>
+                        <h3 class="text-lg font-bold text-white mb-2">Đổi Mới Mô Hình Kinh Doanh Bền Vững & IoT UEH</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Tác động lan tỏa của Chuyển đổi số tại thị trường bán lẻ, bất động sản Việt Nam. Ứng dụng IoT trong phát triển bền vững tại trường ĐH Kinh tế TP.HCM (UEH) & Kỷ nguyên AI.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute -left-3 top-1.5 w-6 h-6 rounded-full bg-amber-500 border-4 border-slate-900"></div>
+                    <div class="md:absolute md:-left-32 md:top-1 text-xs font-bold text-amber-400 mb-1 md:mb-0 md:w-24 md:text-right">
+                        Giai Đoạn Covid-19 (2019 - 2021)
+                    </div>
+                    <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/60 shadow-lg">
+                        <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-2">Ứng phó Bán hàng Đa kênh & Khủng hoảng</span>
+                        <h3 class="text-lg font-bold text-white mb-2">Mua Chung Căn Hộ Sapo & Thương Mại Điện Tử Covid-19</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Phân tích ý định mua hàng trực tuyến hỗ trợ doanh nghiệp thông minh thích ứng dịch bệnh; Ứng dụng phần mềm Sapo trong mô hình mua chung chung cư cao cấp TP.HCM.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative pl-8 md:pl-10">
+                    <div class="absolute -left-3 top-1.5 w-6 h-6 rounded-full bg-blue-500 border-4 border-slate-900"></div>
+                    <div class="md:absolute md:-left-32 md:top-1 text-xs font-bold text-blue-400 mb-1 md:mb-0 md:w-24 md:text-right">
+                        Giai Đoạn Nền Tảng (2008 - 2018)
+                    </div>
+                    <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/60 shadow-lg">
+                        <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30 mb-2">E-banking, Facebook Ads & Dịch vụ Y tế</span>
+                        <h3 class="text-lg font-bold text-white mb-2">Sự Chấp Nhận Ngân Hàng Điện Tử & Tái Cấu Trúc Airbnb</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Nghiên cứu thực nghiệm về Ngân hàng điện tử tại TP.HCM, thái độ quảng cáo Facebook, Airbnb tái cấu trúc thị trường thuê căn hộ và chất lượng dịch vụ Y học cổ truyền.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Impact Dashboard -->
+    <section id="impact" class="py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+            <span class="text-brand-600 font-bold text-xs uppercase tracking-widest block mb-1">Phân Tích Dữ Liệu</span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                Phân Bổ Định Hướng Nghiên Cứu
+            </h2>
+            <p class="text-slate-600 text-xs sm:text-sm mt-2">
+                Sự kết hợp đa ngành giữa Kinh tế học, Quản trị doanh nghiệp và Công nghệ hiện đại
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Visual Chart Representation -->
+            <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6">
+                <h3 class="text-base font-bold text-slate-900 border-b border-slate-100 pb-3 flex items-center justify-between">
+                    <span>Tỷ Lệ Lĩnh Vực Đề Tài (18 Công Trình)</span>
+                    <i class="fa-solid fa-chart-pie text-brand-600"></i>
+                </h3>
+
+                <div class="space-y-4">
+                    <!-- Progress Bar 1 -->
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-slate-700"><i class="fa-solid fa-circle text-emerald-500 mr-1 text-[8px]"></i> Chuyển Đổi Số & Công Nghệ (IoT/AI)</span>
+                            <span class="text-slate-500">6 Đề tài (33.3%)</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-emerald-500 rounded-full" style="width: 33.3%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar 2 -->
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-slate-700"><i class="fa-solid fa-circle text-amber-500 mr-1 text-[8px]"></i> Fintech, Ngân Hàng & Tài Sản Số</span>
+                            <span class="text-slate-500">4 Đề tài (22.2%)</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-amber-500 rounded-full" style="width: 22.2%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar 3 -->
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-slate-700"><i class="fa-solid fa-circle text-blue-500 mr-1 text-[8px]"></i> TMĐT, Bán Lẻ & Marketing Số</span>
+                            <span class="text-slate-500">4 Đề tài (22.2%)</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-blue-500 rounded-full" style="width: 22.2%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar 4 -->
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-slate-700"><i class="fa-solid fa-circle text-indigo-500 mr-1 text-[8px]"></i> Tái Cấu Trúc SMEs & Bất Động Sản</span>
+                            <span class="text-slate-500">3 Đề tài (16.7%)</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-indigo-500 rounded-full" style="width: 16.7%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar 5 -->
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-slate-700"><i class="fa-solid fa-circle text-rose-500 mr-1 text-[8px]"></i> Quản Trị Y Tế & Giáo Dục</span>
+                            <span class="text-slate-500">1 Đề tài (5.6%)</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-rose-500 rounded-full" style="width: 5.6%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value Proposition Card -->
+            <div class="lg:col-span-6 space-y-4">
+                <div class="p-6 rounded-3xl bg-gradient-to-br from-brand-900 to-slate-900 text-white shadow-xl">
+                    <i class="fa-solid fa-quote-left text-3xl text-brand-400 mb-4 block"></i>
+                    <p class="text-sm sm:text-base leading-relaxed font-light text-slate-200">
+                        "Tất cả 18 công trình nghiên cứu đều xuất phát từ yêu cầu thực tiễn của thị trường Việt Nam — từ các vấn đề cấp thiết của doanh nghiệp vừa và nhỏ (SMEs) cho đến những xu hướng công nghệ tiên phong như AI, TikTok Commerce và Tài sản mã hóa."
+                    </p>
+                    <div class="mt-6 flex items-center gap-3 border-t border-slate-700/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-500 flex items-center justify-center font-bold text-white">
+                            17Y
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-white">Tác Giả Nghiên Cứu Khoa Học</div>
+                            <div class="text-[11px] text-brand-300">Hoạt động nghiên cứu 2008 - 2025+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                        <i class="fa-solid fa-map-location-dot text-brand-600 text-xl mb-2"></i>
+                        <h4 class="text-xs font-bold text-slate-900">Địa Bàn Nghiên Cứu</h4>
+                        <p class="text-[11px] text-slate-500 mt-1">Tập trung trọng điểm TP.HCM & Thị trường Việt Nam</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                        <i class="fa-solid fa-flask-vial text-emerald-600 text-xl mb-2"></i>
+                        <h4 class="text-xs font-bold text-slate-900">Phương Pháp Chuẩn</h4>
+                        <p class="text-[11px] text-slate-500 mt-1">Định lượng (Quantitative), PLS-SEM & Phân tích dữ liệu thực nghiệm</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Collaboration Section -->
+    <section id="contact" class="py-16 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200/80 grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-brand-600 font-bold text-xs uppercase tracking-widest block">Kết Nối Tri Thức</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+                        Liên Hệ Hợp Tác Nghiên Cứu & Hội Thảo
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Sẵn sàng hợp tác với các nhà nghiên cứu, trường đại học, tạp chí khoa học và doanh nghiệp trong các dự án Chuyển đổi số, AI và Kinh tế số.
+                    </p>
+
+                    <div class="space-y-3 pt-3 text-xs text-slate-700">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span>Email Nghiên cứu: <a href="mailto:namnp@ueh.edu.vn" class="font-bold text-brand-600 hover:underline">namnp@ueh.edu.vn</a></span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <span>Điện thoại / Zalo liên hệ: <a href="tel:0919226505" class="font-bold text-emerald-600 hover:underline">0919 226 505</a></span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <span>Đơn vị công tác: <strong>Trường Đại học Kinh tế TP.HCM (UEH)</strong></span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <span>Mạng lưới Academic: UEH Portal | Google Scholar | ResearchGate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Họ & Tên *</label>
+                                <input type="text" required placeholder="Nguyễn Văn A" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-brand-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Email *</label>
+                                <input type="email" required placeholder="example@domain.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-brand-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Nhu Cầu Hợp Tác</label>
+                            <select class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-brand-500 text-slate-700">
+                                <option>Hợp tác viết bài báo khoa học (Co-author)</option>
+                                <option>Mời diễn giả / Mời thẩm định đề tài</option>
+                                <option>Xin dữ liệu trích dẫn / Toàn văn nghiên cứu</option>
+                                <option>Tư vấn Chuyển đổi số cho Doanh nghiệp</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Nội dung tin nhắn *</label>
+                            <textarea rows="4" required placeholder="Xin chào, tôi rất quan tâm đến công trình nghiên cứu về..." class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-brand-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3 bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs rounded-xl transition-all shadow-md">
+                            <i class="fa-solid fa-paper-plane mr-2"></i> Gửi Yêu Cầu Hợp Tác
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-xs border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="font-medium text-slate-300">© 2008 - 2026 Academic Research Portfolio | Trường Đại học Kinh tế TP.HCM (UEH)</p>
+            <p class="mt-1.5 text-slate-400">
+                Email: <a href="mailto:namnp@ueh.edu.vn" class="text-brand-400 hover:underline font-semibold">namnp@ueh.edu.vn</a> 
+                <span class="mx-2">|</span> 
+                Hotline / Zalo: <a href="tel:0919226505" class="text-emerald-400 hover:underline font-semibold">0919 226 505</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Paper Detail Modal System -->
+    <div id="paper-modal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto custom-scrollbar border border-slate-100">
+            
+            <button onclick="closeModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition-all">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div id="modal-content">
+                <!-- JS dynamically renders modal data here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Data Structure for 18 Scientific Research Papers
+        const papersData = [
+            {
+                id: 1,
+                title: "Nghiên Cứu Về Sự Hài Lòng Của Người Tiêu Dùng Đối Với Quảng Cáo Mỹ Phẩm Thuần Chay Bằng AI Trên Nền Tảng TikTok: Các Yếu Tố Công Nghệ, Thẩm Mỹ Và Đạo Đức Tác Động Đến Hành Vi Tiêu Dùng",
+                category: "AI_DIGITAL",
+                categoryLabel: "AI & Consumer Behavior",
+                categoryBadge: "bg-purple-100 text-purple-700 border-purple-200",
+                year: "2024",
+                citations: 12,
+                abstract: "Nghiên cứu khám phá sự tác động đa chiều của quảng cáo sinh bằng Trí tuệ Nhân tạo (AI Generated Content) đối với sản phẩm mỹ phẩm thuần chay trên nền tảng TikTok. Tác giả phân tích các biến số về tính thẩm mỹ thuật toán, tính minh bạch đạo đức và trải nghiệm công nghệ tương tác ảnh hưởng đến thái độ và hành vi mua thực tế của gen Z.",
+                keywords: ["TikTok AI", "Mỹ phẩm thuần chay", "Đạo đức AI", "Thẩm mỹ thuật toán", "Hành vi người tiêu dùng"],
+                methodology: "Định lượng (PLS-SEM) khảo sát 450 người dùng TikTok tại TP.HCM"
+            },
+            {
+                id: 2,
+                title: "Quản Trị Rủi Ro Toàn Diện Trong Đầu Tư Tài Sản Số Tại Việt Nam: Phân Tích Thực Trạng Và Khung Giải Pháp Đa Cấp Độ",
+                category: "FINTECH_FINANCE",
+                categoryLabel: "Crypto & Risk Governance",
+                categoryBadge: "bg-amber-100 text-amber-700 border-amber-200",
+                year: "2024",
+                citations: 18,
+                abstract: "Đánh giá toàn diện thực trạng đầu tư tài sản số (Digital Assets / Cryptocurrency) tại thị trường Việt Nam. Bài báo đề xuất khung quản trị rủi ro 3 cấp độ: Khung pháp lý Nhà nước, An toàn hạ tầng công nghệ ngân hàng/sàn giao dịch và Năng lực quản trị rủi ro cá nhân cho nhà đầu tư.",
+                keywords: ["Tài sản số", "Crypto Risk", "Quản trị rủi ro", "Khung pháp lý", "Tài chính số"],
+                methodology: "Phân tích định tính kết hợp khảo sát chuyên gia tài chính"
+            },
+            {
+                id: 3,
+                title: "Tác Động Lan Tỏa Của Chuyển Đổi Số Đến Đổi Mới Mô Hình Kinh Doanh Bền Vững Và Hiệu Quả Kinh Doanh: Bằng Chứng Thực Nghiệm Tại Ngành Bán Lẻ Việt Nam",
+                category: "DIGITAL_TRANS",
+                categoryLabel: "Digital & Sustainable Retail",
+                categoryBadge: "bg-emerald-100 text-emerald-700 border-emerald-200",
+                year: "2023",
+                citations: 25,
+                abstract: "Nghiên cứu tác động lan tỏa (Spillover Effect) từ việc số hóa quy trình đến đổi mới mô hình kinh doanh tuần hoàn và xanh tại các chuỗi bán lẻ. Kết quả khẳng định chuyển đổi số giúp tối ưu hóa chuỗi cung ứng và gia tăng biên lợi nhuận bền vững.",
+                keywords: ["Chuyển đổi số", "Bán lẻ Việt Nam", "Mô hình kinh doanh bền vững", "Hiệu quả kinh doanh"],
+                methodology: "Mô hình định lượng Structural Equation Modeling (SEM) trên 320 chuỗi bán lẻ"
+            },
+            {
+                id: 4,
+                title: "Tác Động Của Chuyển Đổi Số Đến Đổi Mới Mô Hình Kinh Doanh Bền Vững Và Hiệu Quả Tạo Giá Trị: Bằng Chứng Thực Nghiệm Từ Ngành Bất Động Sản Việt Nam",
+                category: "SME_MANAGEMENT",
+                categoryLabel: "PropTech & Real Estate",
+                categoryBadge: "bg-indigo-100 text-indigo-700 border-indigo-200",
+                year: "2023",
+                citations: 15,
+                abstract: "Tìm hiểu cách thức ứng dụng công nghệ bất động sản (PropTech) làm biến đổi mô hình định giá, tiếp thị và vận hành dự án bất động sản. Bài báo chứng minh số hóa giúp gia tăng hiệu quả tạo giá trị cho cả chủ đầu tư và khách hàng thứ cấp.",
+                keywords: ["PropTech", "Bất động sản Việt Nam", "Chuyển đổi số BĐS", "Tạo giá trị bền vững"],
+                methodology: "Khảo sát thực nghiệm 180 doanh nghiệp kinh doanh & môi giới BĐS"
+            },
+            {
+                id: 5,
+                title: "Thực Trạng Đổi Mới Sáng Tạo Thông Qua Việc Ứng Dụng Internet Of Things Đảm Bảo Sự Phát Triển Bền Vững Tại UEH",
+                category: "DIGITAL_TRANS",
+                categoryLabel: "IoT & Smart Campus",
+                categoryBadge: "bg-emerald-100 text-emerald-700 border-emerald-200",
+                year: "2022",
+                citations: 30,
+                abstract: "Khảo sát thực tế dự án Smart Campus tại Đại học Kinh tế TP.HCM (UEH). Phân tích việc triển khai cảm biến IoT trong quản lý năng lượng, phòng học thông minh và thư viện số hóa nhằm hướng tới đại học xanh bền vững.",
+                keywords: ["IoT", "UEH", "Smart Campus", "Đổi mới sáng tạo", "Phát triển bền vững"],
+                methodology: "Nghiên cứu trường hợp (Case Study) kết hợp dữ liệu vận hành kỹ thuật tại UEH"
+            },
+            {
+                id: 6,
+                title: "Sự Phát Triển Của Fintech Và Khung Pháp Lý Bảo Vệ Người Tiêu Dùng",
+                category: "FINTECH_FINANCE",
+                categoryLabel: "Fintech & Consumer Law",
+                categoryBadge: "bg-amber-100 text-amber-700 border-amber-200",
+                year: "2022",
+                citations: 22,
+                abstract: "Nghiên cứu những khoảng trống pháp lý trước sự bùng nổ của ví điện tử, thấu chi trực tuyến (BNPL) và P2P Lending. Đề xuất cơ chế Thử nghiệm pháp lý (Regulatory Sandbox) để vừa thúc đẩy Fintech vừa bảo vệ quyền lợi dữ liệu cá nhân.",
+                keywords: ["Fintech", "Khung pháp lý", "Bảo vệ người tiêu dùng", "Sandbox", "Tài chính công nghệ"],
+                methodology: "Phân tích so sánh luật pháp quốc tế và thực tiễn thị trường Việt Nam"
+            },
+            {
+                id: 7,
+                title: "Phát Triển Bền Vững Doanh Nghiệp Trong Kỷ Nguyên AI (Artificial Intelligence) Và Công Nghệ Số",
+                category: "AI_DIGITAL",
+                categoryLabel: "AI & Corporate Strategy",
+                categoryBadge: "bg-purple-100 text-purple-700 border-purple-200",
+                year: "2022",
+                citations: 40,
+                abstract: "Tổng quan chiến lược tái cấu trúc doanh nghiệp dựa trên năng lực AI. Khai thác cách thức tự động hóa quy trình, dự báo nhu cầu thị trường bằng Machine Learning để cân bằng giữa lợi nhuận kinh tế và trách nhiệm xã hội.",
+                keywords: ["AI Enterprise", "Kỷ nguyên số", "Phát triển bền vững", "Chiến lược doanh nghiệp"],
+                methodology: "Tổng quan lý thuyết (Systematic Literature Review) & Khung phân tích chiến lược"
+            },
+            {
+                id: 8,
+                title: "Chuyển Đổi Số Trong Lĩnh Vực Du Lịch: Tận Dụng Công Nghệ Để Tăng Trải Nghiệm Khách Hàng Và Tối Ưu Hóa Hoạt Động Doanh Nghiệp",
+                category: "DIGITAL_TRANS",
+                categoryLabel: "Smart Tourism & Tech",
+                categoryBadge: "bg-emerald-100 text-emerald-700 border-emerald-200",
+                year: "2021",
+                citations: 34,
+                abstract: "Phân tích tác động của thực tế ảo (VR/AR), hệ thống đặt chỗ thông minh và cá nhân hóa trải nghiệm đối với ngành du lịch Việt Nam hậu đại dịch. Đưa ra mô hình tối ưu hóa chi phí vận hành cho các đại lý lữ hành.",
+                keywords: ["Du lịch thông minh", "Trải nghiệm khách hàng", "Smart Tourism", "Tối ưu vận hành"],
+                methodology: "Khảo sát 250 du khách quốc tế và nội địa tại các điểm du lịch lớn"
+            },
+            {
+                id: 9,
+                title: "Cuộc Cách Mạng Kỹ Thuật Số: Sức Mạnh Biến Đổi Của Chuyển Đổi Số Đối Với Doanh Nghiệp Nhỏ Và Vừa (SMEs)",
+                category: "SME_MANAGEMENT",
+                categoryLabel: "SME Digital Strategy",
+                categoryBadge: "bg-indigo-100 text-indigo-700 border-indigo-200",
+                year: "2021",
+                citations: 48,
+                abstract: "Đánh giá các rào cản về vốn, nhân lực và tư duy lãnh đạo khi SMEs chuyển đổi số. Đề xuất lộ trình số hóa từng bước giúp SMEs nâng cao năng lực cạnh tranh trong chuỗi giá trị toàn cầu.",
+                keywords: ["SMEs", "Chuyển đổi số doanh nghiệp vừa và nhỏ", "Năng lực cạnh tranh", "Công nghệ 4.0"],
+                methodology: "Khảo sát định lượng 300 SMEs tại vùng kinh tế trọng điểm phía Nam"
+            },
+            {
+                id: 10,
+                title: "Thực Trạng Và Giải Pháp Ứng Dụng Chuyển Đổi Số Trong Môn Phân Tích Định Lượng Trong Kinh Doanh",
+                category: "HEALTHCARE_EDU",
+                categoryLabel: "EdTech & Quantitative Methods",
+                categoryBadge: "bg-rose-100 text-rose-700 border-rose-200",
+                year: "2020",
+                citations: 19,
+                abstract: "Đổi mới phương pháp giảng dạy đại học bằng việc kết hợp phần mềm phân tích dữ liệu (SPSS, R, Python) vào môn Phân tích Định lượng. Tăng cường kỹ năng giải quyết bài toán thực tế cho sinh viên khối ngành kinh tế.",
+                keywords: ["EdTech", "Phân tích định lượng", "Giáo dục đại học", "Chuyển đổi số giáo dục"],
+                methodology: "Thực nghiệm sư phạm trên 500 sinh viên ngành Kinh doanh"
+            },
+            {
+                id: 11,
+                title: "Các Yếu Tố Tác Động Đến Chấp Nhận Ngân Hàng Điện Tử Của Người Tiêu Dùng Trên Địa Bàn TP.HCM (Nghiên cứu thực nghiệm 1)",
+                category: "FINTECH_FINANCE",
+                categoryLabel: "E-Banking Acceptance",
+                categoryBadge: "bg-amber-100 text-amber-700 border-amber-200",
+                year: "2018",
+                citations: 52,
+                abstract: "Dựa trên mô hình chấp nhận công nghệ TAM mở rộng, nghiên cứu phân tích tác động của niềm tin, sự tiện lợi cảm nhận và rủi ro bảo mật đến quyết định dùng Internet/Mobile Banking của dân cư đô thị.",
+                keywords: ["E-banking", "Ngân hàng điện tử TP.HCM", "Mô hình TAM", "Hành vi người tiêu dùng"],
+                methodology: "Khảo sát 400 khách hàng cá nhân tại các quận nội thành TP.HCM"
+            },
+            {
+                id: 12,
+                title: "Các Yếu Tố Tác Động Đến Chấp Nhận Ngân Hàng Điện Tử Của Người Tiêu Dùng Trên Địa Bàn TP.HCM (Mô hình mở rộng chuyên sâu)",
+                category: "FINTECH_FINANCE",
+                categoryLabel: "E-Banking & Trust Model",
+                categoryBadge: "bg-amber-100 text-amber-700 border-amber-200",
+                year: "2019",
+                citations: 45,
+                abstract: "Phần nghiên cứu mở rộng bổ sung biến trung gian về Phí dịch vụ và Chất lượng hỗ trợ kỹ thuật tận nơi. Đưa ra khuyến nghị thiết thực cho các Ngân hàng thương mại cổ phần cải thiện UX/UI ứng dụng mobile.",
+                keywords: ["Ngân hàng số", "Tin cậy người dùng", "TP.HCM Banking", "Trải nghiệm ứng dụng"],
+                methodology: "Phân tích nhân tố khám phá EFA & Regression Analysis"
+            },
+            {
+                id: 13,
+                title: "Ứng Dụng Quản Lý Bán Hàng Đa Kênh Sapo Trong Việc Triển Khai Mô Hình Mua Chung Tại Các Chung Cư Cao Cấp Tại TP.HCM",
+                category: "RETAIL_ECOM",
+                categoryLabel: "Omnichannel & Group Buying",
+                categoryBadge: "bg-blue-100 text-blue-700 border-blue-200",
+                year: "2020",
+                citations: 28,
+                abstract: "Phân tích xu hướng mua gom sỉ (Group Buying) trong cộng đồng cư dân chung cư cao cấp. Bài báo chỉ ra cách nền tảng Sapo hỗ trợ đồng bộ kho hàng, thanh toán và giao hàng chặng cuối hiệu quả.",
+                keywords: ["Phần mềm Sapo", "Bán hàng đa kênh", "Mua chung chung cư", "Chung cư cao cấp TP.HCM"],
+                methodology: "Nghiên cứu hành vi tiêu dùng cộng đồng cư dân 5 khu căn hộ cao cấp tại TP.HCM"
+            },
+            {
+                id: 14,
+                title: "Đo Lường Ý Định Mua Hàng Trực Tuyến Thời Kỳ Dịch Covid-19 Nhằm Hỗ Trợ Công Tác Quản Trị Doanh Nghiệp Thông Minh Tại Việt Nam",
+                category: "RETAIL_ECOM",
+                categoryLabel: "E-Commerce Crisis Mgmt",
+                categoryBadge: "bg-blue-100 text-blue-700 border-blue-200",
+                year: "2020",
+                citations: 60,
+                abstract: "Đo lường sự dịch chuyển đột ngột từ mua sắm truyền thống sang E-Commerce do giãn cách xã hội. Giúp doanh nghiệp điều chỉnh kho vận, tiếp thị số và xây dựng hệ thống quản trị thông minh (Smart Business).",
+                keywords: ["Covid-19", "Mua hàng trực tuyến", "Quản trị thông minh", "Ý định mua hàng"],
+                methodology: "Khảo sát trực tuyến 600 người tiêu dùng toàn quốc trong đợt dịch"
+            },
+            {
+                id: 15,
+                title: "Thái Độ Đối Với Quảng Cáo Trên Nền Tảng Facebook Của Người Tiêu Dùng Tại Địa Bàn TP.HCM",
+                category: "RETAIL_ECOM",
+                categoryLabel: "Social Media Ads",
+                categoryBadge: "bg-blue-100 text-blue-700 border-blue-200",
+                year: "2017",
+                citations: 55,
+                abstract: "Khảo sát thái độ người tiêu dùng trước các dạng quảng cáo lặp lại, quảng cáo cá nhân hóa trên Facebook Newsfeed. Xác định ranh giới giữa tính hữu ích của thông tin và sự phiền ngoái riêng tư.",
+                keywords: ["Facebook Marketing", "Thái độ quảng cáo", "TP.HCM Consumer", "Mạng xã hội"],
+                methodology: "Mô hình hồi quy đa biến trên mẫu 350 người dùng Facebook tích cực"
+            },
+            {
+                id: 16,
+                title: "Các Vấn Đề Liên Quan Đến Tái Cấu Trúc Kinh Doanh Của Doanh Nghiệp Vừa Và Nhỏ Trong Bối Cảnh Cách Mạng Công Nghệ 4.0",
+                category: "SME_MANAGEMENT",
+                categoryLabel: "SME Restructuring 4.0",
+                categoryBadge: "bg-indigo-100 text-indigo-700 border-indigo-200",
+                year: "2018",
+                citations: 38,
+                abstract: "Nghiên cứu toàn diện về áp lực tái cấu trúc sơ đồ tổ chức, cắt giảm chi phí trung gian và áp dụng phần mềm ERP cho các SMEs Việt Nam khi đứng trước làn sóng Công nghiệp 4.0.",
+                keywords: ["Tái cấu trúc", "SMEs 4.0", "Cách mạng công nghiệp 4.0", "Quản trị thay đổi"],
+                methodology: "Phân tích định tính & phỏng vấn sâu 20 Giám đốc điều hành SMEs"
+            },
+            {
+                id: 17,
+                title: "Ứng Dụng Airbnb Trong Việc Tái Cấu Trúc Thị Trường Cho Thuê Căn Hộ Tại Các Chung Cư Cao Cấp Trên Địa Bàn TP.HCM",
+                category: "SME_MANAGEMENT",
+                categoryLabel: "Sharing Economy & Airbnb",
+                categoryBadge: "bg-indigo-100 text-indigo-700 border-indigo-200",
+                year: "2019",
+                citations: 42,
+                abstract: "Đánh giá mô hình kinh tế chia sẻ (Sharing Economy) qua Airbnb tác động đến tỷ suất sinh lời căn hộ cao cấp và công tác quản lý vận hành chung cư tại TP.HCM.",
+                keywords: ["Airbnb", "Kinh tế chia sẻ", "Cho thuê căn hộ", "Chung cư cao cấp TP.HCM"],
+                methodology: "Khảo sát 150 chủ căn hộ cho thuê & đơn vị quản lý vận hành tòa nhà"
+            },
+            {
+                id: 18,
+                title: "Tác Động Của Chất Lượng Dịch Vụ Đến Sự Hài Lòng Của Bệnh Nhân Tại Bệnh Viện Y Học Cổ Truyền",
+                category: "HEALTHCARE_EDU",
+                categoryLabel: "Healthcare Quality Management",
+                categoryBadge: "bg-rose-100 text-rose-700 border-rose-200",
+                year: "2015",
+                citations: 50,
+                abstract: "Nghiên cứu đo lường chất lượng dịch vụ khám chữa bệnh theo thang đo SERVQUAL điều chỉnh cho ngành y tế cổ truyền. Xác định thái độ y bác sĩ và thời gian chờ đợi là hai yếu tố then chốt nhất.",
+                keywords: ["Chất lượng dịch vụ", "Y học cổ truyền", "Sự hài lòng bệnh nhân", "SERVQUAL Y tế"],
+                methodology: "Khảo sát 300 bệnh nhân điều trị nội/ngoại trú tại Bệnh viện Y học cổ truyền"
+            }
+        ];
+
+        let currentCategory = 'ALL';
+        let currentView = 'grid';
+
+        // Render Papers on Load
+        window.onload = function() {
+            renderPapers(papersData);
+        };
+
+        // Render Function
+        function renderPapers(data) {
+            const container = document.getElementById('papers-container');
+            const noResults = document.getElementById('no-results');
+            const countBadge = document.getElementById('result-count-badge');
+
+            countBadge.innerText = `Hiển thị ${data.length} công trình`;
+
+            if (data.length === 0) {
+                container.innerHTML = '';
+                noResults.classList.remove('hidden');
+                return;
+            } else {
+                noResults.classList.add('hidden');
+            }
+
+            if (currentView === 'grid') {
+                container.className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6";
+                container.innerHTML = data.map(paper => `
+                    <div class="bg-white rounded-3xl p-6 border border-slate-200 hover:border-brand-300 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-3">
+                                <span class="px-2.5 py-1 rounded-lg text-[11px] font-bold border ${paper.categoryBadge}">
+                                    ${paper.categoryLabel}
+                                </span>
+                                <span class="text-xs font-bold text-slate-400 group-hover:text-brand-600 transition-colors">
+                                    <i class="fa-regular fa-calendar mr-1"></i>${paper.year}
+                                </span>
+                            </div>
+
+                            <h3 class="text-sm sm:text-base font-extrabold text-slate-900 group-hover:text-brand-600 transition-colors line-clamp-3 leading-snug mb-3" title="${paper.title}">
+                                ${paper.title}
+                            </h3>
+
+                            <p class="text-xs text-slate-500 line-clamp-3 leading-relaxed mb-4 font-light">
+                                ${paper.abstract}
+                            </p>
+                        </div>
+
+                        <div>
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-1 mb-4">
+                                ${paper.keywords.slice(0, 3).map(kw => `<span class="px-2 py-0.5 rounded bg-slate-100 text-[10px] text-slate-600">#${kw}</span>`).join('')}
+                            </div>
+
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400 font-medium">
+                                    <i class="fa-solid fa-quote-right text-slate-300 mr-1"></i>Trích dẫn: <strong>${paper.citations}</strong>
+                                </span>
+                                <button onclick="openModal(${paper.id})" class="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-brand-600 text-white text-xs font-semibold transition-all">
+                                    Chi tiết <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                // List View
+                container.className = "space-y-4";
+                container.innerHTML = data.map(paper => `
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 hover:border-brand-300 hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div class="space-y-1.5 max-w-3xl">
+                            <div class="flex items-center gap-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-bold border ${paper.categoryBadge}">
+                                    ${paper.categoryLabel}
+                                </span>
+                                <span class="text-xs font-bold text-slate-400">${paper.year}</span>
+                            </div>
+                            <h3 class="text-sm font-bold text-slate-900 hover:text-brand-600 cursor-pointer" onclick="openModal(${paper.id})">
+                                ${paper.title}
+                            </h3>
+                            <p class="text-xs text-slate-500 line-clamp-1">${paper.abstract}</p>
+                        </div>
+
+                        <div class="flex items-center gap-3 shrink-0">
+                            <span class="text-xs text-slate-400 hidden sm:inline"><i class="fa-solid fa-quote-right mr-1"></i>${paper.citations}</span>
+                            <button onclick="openModal(${paper.id})" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-700 font-semibold text-xs transition-all w-full sm:w-auto text-center">
+                                Xem Abstract
+                            </button>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // Category Filter
+        function filterCategory(cat) {
+            currentCategory = cat;
+            
+            // Update active styles for buttons
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.className = "category-btn px-4 py-2 rounded-xl text-xs font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all";
+            });
+
+            event.currentTarget.className = "category-btn active px-4 py-2 rounded-xl text-xs font-bold transition-all bg-brand-600 text-white shadow-sm shadow-brand-500/20";
+
+            filterPapers();
+        }
+
+        // Filter and Search
+        function filterPapers() {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+            const clearBtn = document.getElementById('clear-search-btn');
+
+            if (query.length > 0) {
+                clearBtn.classList.remove('hidden');
+            } else {
+                clearBtn.classList.add('hidden');
+            }
+
+            const filtered = papersData.filter(paper => {
+                const matchesCat = (currentCategory === 'ALL') || (paper.category === currentCategory);
+                const matchesQuery = paper.title.toLowerCase().includes(query) ||
+                                     paper.abstract.toLowerCase().includes(query) ||
+                                     paper.keywords.some(k => k.toLowerCase().includes(query));
+                return matchesCat && matchesQuery;
+            });
+
+            renderPapers(filtered);
+        }
+
+        function clearSearch() {
+            document.getElementById('search-input').value = '';
+            filterPapers();
+        }
+
+        function resetFilters() {
+            document.getElementById('search-input').value = '';
+            filterCategory('ALL');
+        }
+
+        // Switch Grid/List View
+        function setSwitchView(view) {
+            currentView = view;
+            const gridBtn = document.getElementById('view-grid-btn');
+            const listBtn = document.getElementById('view-list-btn');
+
+            if (view === 'grid') {
+                gridBtn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 text-white transition-all";
+                listBtn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 transition-all";
+            } else {
+                listBtn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 text-white transition-all";
+                gridBtn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 transition-all";
+            }
+
+            filterPapers();
+        }
+
+        // Modal Handlers
+        function openModal(id) {
+            const paper = papersData.find(p => p.id === id);
+            if (!paper) return;
+
+            const modal = document.getElementById('paper-modal');
+            const modalContent = document.getElementById('modal-content');
+
+            modalContent.innerHTML = `
+                <div class="space-y-6">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full text-xs font-bold ${paper.categoryBadge} mb-3">
+                            ${paper.categoryLabel}
+                        </span>
+                        <h2 class="text-xl sm:text-2xl font-black text-slate-900 leading-snug">
+                            ${paper.title}
+                        </h2>
+                        <div class="flex items-center gap-4 mt-3 text-xs text-slate-500 font-medium">
+                            <span><i class="fa-regular fa-calendar mr-1"></i>Năm công bố: <strong>${paper.year}</strong></span>
+                            <span><i class="fa-solid fa-quote-right mr-1"></i>Ước tính trích dẫn: <strong>${paper.citations}</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+                        <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Tóm Tắt Nghiên Cứu (Abstract)</h4>
+                        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-light">
+                            ${paper.abstract}
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-2xl border border-slate-200">
+                            <h4 class="text-xs font-bold text-slate-800 mb-1"><i class="fa-solid fa-flask text-brand-600 mr-1.5"></i>Phương Pháp & Quy Mô</h4>
+                            <p class="text-xs text-slate-600 leading-relaxed">${paper.methodology}</p>
+                        </div>
+                        <div class="p-4 rounded-2xl border border-slate-200">
+                            <h4 class="text-xs font-bold text-slate-800 mb-1"><i class="fa-solid fa-tags text-brand-600 mr-1.5"></i>Từ Khóa Chính</h4>
+                            <div class="flex flex-wrap gap-1 mt-1">
+                                ${paper.keywords.map(kw => `<span class="px-2 py-0.5 rounded bg-slate-100 text-[10px] text-slate-700">#${kw}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BibTeX Generator snippet -->
+                    <div class="p-4 rounded-2xl bg-slate-900 text-slate-200 font-mono text-[11px] relative">
+                        <div class="flex justify-between items-center mb-2 text-slate-400 text-[10px] uppercase font-sans font-bold">
+                            <span>Trích Dẫn Form BibTeX</span>
+                            <button onclick="copyBibtex('${paper.id}')" class="text-brand-400 hover:text-brand-300">
+                                <i class="fa-regular fa-copy mr-1"></i>Sao chép
+                            </button>
+                        </div>
+                        <code id="bibtex-code-${paper.id}" class="block overflow-x-auto text-emerald-400">
+@article{research_${paper.id}_${paper.year},<br/>
+&nbsp;&nbsp;title={${paper.title}},<br/>
+&nbsp;&nbsp;author={Nam, N. P. (UEH)},<br/>
+&nbsp;&nbsp;email={namnp@ueh.edu.vn},<br/>
+&nbsp;&nbsp;year={${paper.year}},<br/>
+&nbsp;&nbsp;journal={Scientific Research Portfolio (17 Years - UEH)}<br/>
+}
+                        </code>
+                    </div>
+
+                    <!-- Action buttons -->
+                    <div class="flex flex-wrap items-center justify-end gap-3 pt-2">
+                        <button onclick="closeModal()" class="px-5 py-2.5 rounded-xl bg-slate-100 text-slate-700 text-xs font-bold hover:bg-slate-200">
+                            Đóng
+                        </button>
+                        <button onclick="simulatePdfDownload('${paper.title}')" class="px-5 py-2.5 rounded-xl bg-brand-600 text-white text-xs font-bold hover:bg-brand-700 shadow-md">
+                            <i class="fa-solid fa-file-arrow-down mr-1.5"></i>Tải Toàn Văn (PDF)
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('paper-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function copyBibtex(id) {
+            const paper = papersData.find(p => p.id == id);
+            const codeText = `@article{research_${id}_${paper.year},\n  title={${paper.title}},\n  author={Nam, N. P. (UEH)},\n  email={namnp@ueh.edu.vn},\n  phone={0919226505},\n  year={${paper.year}}\n}`;
+            const dummy = document.createElement('textarea');
+            document.body.appendChild(dummy);
+            dummy.value = codeText;
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
+
+            showToast('Đã sao chép định dạng trích dẫn BibTeX (Nam, N.P - UEH)!');
+        }
+
+        function simulatePdfDownload(title) {
+            showToast(`Đang khởi tạo tệp PDF công trình: "${title.substring(0, 30)}..."`);
+        }
+
+        function downloadCvSummary() {
+            showToast('Đang tạo file tổng hợp 18 bài báo nghiên cứu khoa học (17 năm)...');
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showToast('Cảm ơn bạn! Yêu cầu hợp tác đã được gửi thành công.');
+            e.target.reset();
+        }
+
+        // Custom Toast Notification System
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-2xl text-xs font-semibold flex items-center gap-3 border border-slate-700 animate-bounce';
+            toast.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-400 text-base"></i> <span>${message}</span>`;
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.remove();
+            }, 3500);
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
